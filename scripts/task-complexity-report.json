@@ -1,163 +1,155 @@
 {
   "meta": {
-    "generatedAt": "2025-05-10T01:43:12.612Z",
-    "tasksAnalyzed": 19,
+    "generatedAt": "2025-05-10T03:03:18.380Z",
+    "tasksAnalyzed": 18,
     "thresholdScore": 5,
     "projectName": "Taskmaster",
     "usedResearch": false
   },
   "complexityAnalysis": [
     {
-      "taskId": 2,
-      "taskTitle": "实现数据获取接口",
-      "complexityScore": 7,
-      "recommendedSubtasks": 6,
-      "expansionPrompt": "Break down the data API implementation into separate components for each data source, error handling, caching, and connection management",
-      "reasoning": "Complex due to multiple data sources, error handling, retry logic, and caching requirements"
-    },
-    {
       "taskId": 3,
       "taskTitle": "数据预处理模块",
       "complexityScore": 8,
-      "recommendedSubtasks": 7,
-      "expansionPrompt": "Divide the data preprocessing module into specific data cleaning operations, quality checks, and special case handlers",
-      "reasoning": "High complexity due to various data quality issues, time series alignment, and special market conditions"
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the data preprocessing module into specific components for missing value handling, outlier detection, data standardization, time series alignment, special events processing, and data quality validation",
+      "reasoning": "Complex data cleaning operations with multiple edge cases and quality requirements"
     },
     {
       "taskId": 4,
       "taskTitle": "股票池管理模块",
       "complexityScore": 6,
-      "recommendedSubtasks": 5,
-      "expansionPrompt": "Break down the stock pool management into filtering rules implementation, update mechanisms, and pool maintenance functions",
-      "reasoning": "Moderate complexity with clear filtering rules but requires careful handling of dynamic updates"
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Divide the stock pool management into initialization, filtering rules implementation, dynamic updates, and monitoring components",
+      "reasoning": "Moderate complexity with clear rule-based filtering and update mechanisms"
     },
     {
       "taskId": 5,
       "taskTitle": "投资组合构建模块",
       "complexityScore": 7,
       "recommendedSubtasks": 5,
-      "expansionPrompt": "Separate the portfolio construction into weight calculation methods, rebalancing mechanisms, and constraint handling",
-      "reasoning": "Complex due to multiple weighting methods and periodic adjustment requirements"
+      "expansionPrompt": "Split portfolio construction into weight calculation methods, rebalancing mechanism, constraint handling, transaction cost modeling, and validation components",
+      "reasoning": "Multiple weighting methods and complex rebalancing logic required"
     },
     {
       "taskId": 6,
       "taskTitle": "收益率计算模块",
       "complexityScore": 6,
       "recommendedSubtasks": 4,
-      "expansionPrompt": "Break down return calculations into different time periods, cost considerations, and performance optimization",
-      "reasoning": "Moderate complexity with standard calculations but needs careful handling of edge cases"
+      "expansionPrompt": "Separate return calculation into daily returns, period conversions, cumulative returns, and cost-adjusted returns components",
+      "reasoning": "Standard financial calculations with well-defined formulas"
     },
     {
       "taskId": 7,
       "taskTitle": "风险指标计算模块",
-      "complexityScore": 8,
-      "recommendedSubtasks": 6,
-      "expansionPrompt": "Divide risk metrics calculation into individual indicators, rolling window implementations, and optimization strategies",
-      "reasoning": "High complexity due to multiple sophisticated risk metrics and rolling window calculations"
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down risk metrics into volatility calculation, beta estimation, drawdown analysis, downside risk, and rolling window implementation",
+      "reasoning": "Complex statistical calculations with multiple risk metrics"
     },
     {
       "taskId": 8,
       "taskTitle": "Alpha计算模块",
-      "complexityScore": 9,
-      "recommendedSubtasks": 7,
-      "expansionPrompt": "Break down Alpha calculations into model implementation, statistical analysis, and factor decomposition components",
-      "reasoning": "Very complex due to advanced statistical models and multi-factor analysis requirements"
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide alpha calculation into CAPM implementation, Jensen's Alpha, confidence intervals, multi-factor decomposition, and statistical validation",
+      "reasoning": "Advanced statistical modeling and complex factor analysis required"
     },
     {
       "taskId": 9,
       "taskTitle": "绩效比率计算模块",
-      "complexityScore": 7,
-      "recommendedSubtasks": 5,
-      "expansionPrompt": "Separate performance ratio calculations into individual metrics, risk-free rate handling, and period adjustments",
-      "reasoning": "Complex due to various performance metrics and dynamic rate adjustments"
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Split performance ratio calculation into Sharpe ratio, Sortino ratio, Information ratio, and risk-free rate adjustment components",
+      "reasoning": "Standard performance metrics with clear calculation methods"
     },
     {
       "taskId": 10,
       "taskTitle": "均值方差分析模块",
       "complexityScore": 9,
-      "recommendedSubtasks": 7,
-      "expansionPrompt": "Break down mean-variance analysis into covariance calculation, optimization algorithms, and constraint handling",
-      "reasoning": "High complexity due to mathematical optimization and numerical stability requirements"
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down mean-variance analysis into covariance estimation, efficient frontier calculation, optimization solver, constraint handling, numerical stability, and validation components",
+      "reasoning": "Complex optimization problems and numerical computation challenges"
     },
     {
       "taskId": 11,
       "taskTitle": "基准指数处理模块",
-      "complexityScore": 6,
+      "complexityScore": 5,
       "recommendedSubtasks": 4,
-      "expansionPrompt": "Divide benchmark processing into data handling, weight calculations, and rebalancing date management",
-      "reasoning": "Moderate complexity with standard index calculations and adjustments"
+      "expansionPrompt": "Divide benchmark processing into index data handling, return calculation, constituent weight management, and rebalancing date processing",
+      "reasoning": "Straightforward index processing with standard procedures"
     },
     {
       "taskId": 12,
       "taskTitle": "数据可视化基础模块",
       "complexityScore": 5,
       "recommendedSubtasks": 4,
-      "expansionPrompt": "Break down basic visualization into chart types, styling system, and data transformation components",
-      "reasoning": "Standard complexity with well-defined chart types and styling requirements"
+      "expansionPrompt": "Split basic visualization into return curves, drawdown charts, risk-return plots, and style configuration components",
+      "reasoning": "Standard plotting functionality with common chart types"
     },
     {
       "taskId": 13,
       "taskTitle": "高级可视化模块",
       "complexityScore": 7,
       "recommendedSubtasks": 5,
-      "expansionPrompt": "Separate advanced visualization into complex chart implementations, interactivity features, and optimization",
-      "reasoning": "Complex due to advanced chart types and interactive features"
+      "expansionPrompt": "Break down advanced visualization into efficient frontier plots, rolling metrics charts, risk decomposition diagrams, interactive features, and optimization components",
+      "reasoning": "Complex interactive visualizations and performance considerations"
     },
     {
       "taskId": 14,
       "taskTitle": "统计分析模块",
       "complexityScore": 8,
-      "recommendedSubtasks": 6,
-      "expansionPrompt": "Break down statistical analysis into test implementations, robustness checks, and result validation",
-      "reasoning": "High complexity due to various statistical methods and validation requirements"
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide statistical analysis into normality tests, autocorrelation analysis, significance testing, robustness checks, and result validation",
+      "reasoning": "Advanced statistical methods and comprehensive testing required"
     },
     {
       "taskId": 15,
       "taskTitle": "报告生成模块",
       "complexityScore": 6,
-      "recommendedSubtasks": 5,
-      "expansionPrompt": "Divide report generation into format handlers, template system, and data export components",
-      "reasoning": "Moderate complexity with multiple output formats and templating needs"
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Split report generation into HTML template, PDF conversion, Excel export, and template management components",
+      "reasoning": "Standard report generation with multiple format support"
     },
     {
       "taskId": 16,
       "taskTitle": "数据导出模块",
       "complexityScore": 4,
       "recommendedSubtasks": 3,
-      "expansionPrompt": "Break down data export into format converters, compression handling, and validation checks",
-      "reasoning": "Lower complexity with standard export formats and compression"
+      "expansionPrompt": "Break down data export into CSV handling, Excel formatting, and JSON conversion components",
+      "reasoning": "Simple data format conversion with standard protocols"
     },
     {
       "taskId": 17,
       "taskTitle": "性能优化模块",
-      "complexityScore": 8,
+      "complexityScore": 9,
       "recommendedSubtasks": 6,
-      "expansionPrompt": "Separate performance optimization into parallel processing, caching system, and memory management",
-      "reasoning": "High complexity due to parallel processing and optimization requirements"
+      "expansionPrompt": "Divide performance optimization into parallel processing, computation optimization, caching system, memory management, profiling, and benchmarking components",
+      "reasoning": "Complex system-wide optimization with multiple performance aspects"
     },
     {
       "taskId": 18,
       "taskTitle": "日志和监控模块",
       "complexityScore": 5,
       "recommendedSubtasks": 4,
-      "expansionPrompt": "Break down logging and monitoring into system components, alert mechanisms, and tracking features",
-      "reasoning": "Standard complexity with well-defined logging and monitoring requirements"
+      "expansionPrompt": "Split logging and monitoring into log system, performance tracking, error handling, and alert mechanism components",
+      "reasoning": "Standard logging and monitoring functionality"
     },
     {
       "taskId": 19,
       "taskTitle": "配置管理模块",
       "complexityScore": 4,
       "recommendedSubtasks": 3,
-      "expansionPrompt": "Divide configuration management into file handling, validation, and version control components",
-      "reasoning": "Lower complexity with standard configuration management features"
+      "expansionPrompt": "Break down configuration management into file handling, parameter validation, and version control components",
+      "reasoning": "Basic configuration management with standard features"
     },
     {
       "taskId": 20,
       "taskTitle": "单元测试套件",
       "complexityScore": 7,
-      "recommendedSubtasks": 6,
-      "expansionPrompt": "Break down test suite into unit tests, integration tests, performance tests, and coverage reporting",
-      "reasoning": "Complex due to comprehensive testing requirements across multiple modules"
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide test suite into unit test implementation, integration testing, performance testing, coverage reporting, and test automation components",
+      "reasoning": "Comprehensive testing requirements across multiple modules"
     }
   ]
 }
